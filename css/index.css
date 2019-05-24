@@ -1,0 +1,32 @@
+body{
+	background: url("../images/website/index.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#navigation a{
+ color:white;
+}
+#navigation a:hover{
+	color:#f1f1f1;
+}
+.welcome_div{
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+	text-align: center;
+	position:fixed;
+	top:40%;
+}
+#direction{
+	position:fixed;
+	right:10%;
+	top:30%;
+	font-family: 'Cute Font', cursive;
+}
+.blink{
+		animation: blink 2s ease infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: 1;}
+100%{opacity:0;}
+}

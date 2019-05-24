@@ -1,0 +1,125 @@
+body{
+	background: url("../images/website/rent.jpg")no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.overlay{
+	background-color:rgba(0,0,0,0.3);
+	position:fixed;
+	height:100%;
+	width:100%;
+}
+#navigation{
+	display:block;
+	position: relative;
+}
+#navigation a{
+	text-transform: uppercase;
+	color:white;
+}
+.form-title{
+	font-weight: 600;
+	color:#007bff;
+}
+
+.container{
+position:relative;
+top:100px;
+background:#fff;
+background-size: cover;
+width:60%;
+padding:40px;
+border-radius:10px;
+}
+#login-form{
+	position: relative;
+	left:5%;
+}
+#login-form input[type="text"],#login-form input[type="password"]{
+	border:0;
+	width:60%;
+	border-bottom:solid black 1px;
+	padding:5px 20px;
+}
+#login-form input[type="text"]:focus,#login-form input[type="password"]:focus{
+	outline:none;
+	border-bottom: solid #8e14da 1px;
+}
+.error{
+	color:red;
+	padding:0px;
+	margin:0;
+	margin-left:15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8em;
+}
+
+.login-image img{
+	width:100%;
+}
+#email{
+	width:90%;
+	padding:5px 20px;
+	margin-top: 30px;
+	border:none;
+	border-bottom:solid black 1px;
+}
+#email:focus{
+	outline:none;
+	border-bottom:solid #8e14da 1px;
+}
+
+/*
+********************************************************
+*RESPONSIVE STYLING
+********************************************************
+*/
+@media (max-width: 575.98px) {
+	.container{
+		position: relative;
+		top:30px;
+		width:85%;
+	}
+	#signup-form{
+		width:90%;
+	}
+
+	#signup-form input[type="text"],#signup-form input[type="password"]{
+	border:0;
+	width:80%;
+	border-bottom:solid black 1px;
+	padding:5px 20px;
+	}
+	.form-title{
+		margin-bottom: 20px;
+		font-size:24px;
+	}
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+	.container{
+		position: relative;
+		top:30px;
+		width:85%;
+	}
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	.container{
+		position: relative;
+		top:30px;
+		width:80%;
+	}
+ }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+	.container{
+		position: relative;
+		top:30px;
+		width:80%;
+	}
+ }

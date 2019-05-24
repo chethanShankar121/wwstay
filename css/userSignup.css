@@ -1,0 +1,211 @@
+body{
+	background: url("../images/website/rent.jpg")no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.overlay{
+	background-color:rgba(0,0,0,0.3);
+	position:fixed;
+	height:100%;
+	width:100%;
+}
+#navigation{
+	display:block;
+	position: relative;
+}
+#navigation a{
+	text-transform: uppercase;
+	color:white;
+}
+.container{
+position:relative;
+top:100px;
+background:#fff;
+background-size: cover;
+width:60%;
+padding:40px;
+border-radius:10px;
+}
+.form-title{
+	font-weight: 600;
+	color:#007bff;
+}
+#signup-form{
+	position: relative;
+	left:5%;
+}
+#signup-form input[type="text"],#signup-form input[type="password"]{
+	border:0;
+	width:60%;
+	border-bottom:solid black 1px;
+	padding:5px 20px;
+}
+#signup-form input[type="text"]:focus,#signup-form input[type="password"]:focus{
+	outline:none;
+	border-bottom: solid #8e14da 1px;
+}
+.error{
+	color:red;
+	padding:0px;
+	margin:0;
+	margin-left:15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8em;
+}
+#pass_suggest{
+	padding:3px 10px;
+	margin:0;
+	display:none;
+	border:solid blue 1px;
+	border-radius:5px;
+	background-color: rgba(232,232,247,0.2);
+}
+#pass_suggest p{
+	padding:0;
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.75em;
+	color:red;
+}
+.show{
+	color:silver;
+	font-family:Gotham SSm A,Gotham SSm B,sans-serif;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+.show:hover{
+	cursor: pointer;
+}
+#signup-form{
+	/*display:none;*/
+}
+#email_section{
+	position: relative;
+	left:5%;
+	display: none;
+}
+.signup-image img{
+	width:100%;
+}
+#email{
+	width:90%;
+	padding:5px 20px;
+	margin-top: 30px;
+	text-align: center;
+	border:none;
+	border-bottom:solid black 1px;
+}
+#email:focus{
+	outline:none;
+	border-bottom:solid #8e14da 1px;
+}
+#send_otp_btn{
+	font-size:0.85em;
+	margin-top:33px;
+}
+#otp_section{
+	width:100%;
+	margin-top: 40px;
+	margin-left:0px;
+	display:none;
+}
+#otp{
+	/*width:80%;*/
+	padding:10px 20px;
+	letter-spacing: 20px;
+	border: solid blue 2px;
+	border-radius:20px;
+	margin-top:10px;
+}
+#otp:focus{
+	outline:none;
+}
+#verify_otp_btn{
+	font-size: 0.85em;
+	/*width:73%;*/
+	margin-top:20px;
+}
+#resend_otp_btn{
+	text-decoration: none;
+	margin-left:-10px;
+	display: none;
+}
+#resend_message{
+	text-align: center;
+	color:red;
+	font-family:Gotham SSm A,Gotham SSm B,sans-serif;
+	font-size: 0.85em;
+	margin-top:10px;
+}
+#overlay2{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 999;
+	display:none;
+}
+#overlay2 div{
+	position: relative;
+	top:45%;
+	left:45%;
+	opacity: 0%;
+	color:#ffffff;
+}
+/*
+********************************************************
+*RESPONSIVE STYLING
+********************************************************
+*/
+
+@media (max-width: 575.98px) {
+	.container{
+		position: relative;
+		top:30px;
+		width:85%;
+	}
+	#signup-form{
+		width:90%;
+	}
+
+	#signup-form input[type="text"],#signup-form input[type="password"]{
+	border:0;
+	width:80%;
+	border-bottom:solid black 1px;
+	padding:5px 20px;
+	}
+	.form-title{
+		margin-bottom: 20px;
+		font-size:24px;
+	}
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+	.container{
+		position: relative;
+		top:30px;
+		width:85%;
+	}
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	.container{
+		position: relative;
+		top:30px;
+		width:80%;
+	}
+ }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+	.container{
+		position: relative;
+		top:30px;
+		width:80%;
+	}
+ }
